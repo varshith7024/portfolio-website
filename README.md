@@ -19,3 +19,9 @@ https://www.framer.com/marketplace/templates/sharm-personal-framer-template/
 https://www.squarespace.com/blog/personal-website-examples
 
 https://www.wix.com/explore/websites/categories/personal
+
+# TODO
+
+1. add actual content
+2. home button
+3. /images/pfp.jpg

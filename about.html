@@ -52,7 +52,7 @@
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 50px;
-        margin-right: 50px;
+        margin-right: 40px;
       }
 
       .card .title {
@@ -70,18 +70,96 @@
       }
 
       .date {
-        color: var(--small-text-color); 
+        color: var(--small-text-color);
         font-size: 40px;
         margin: 0;
         font-weight: bold;
         margin-bottom: 20px;
       }
+
+      .reveal {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 0.6s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--text-color);
+        color: var(--small-text-color);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+
+      .popup.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .overlay.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      .choice {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      .choice button {
+        border: none;
+        background-color: var(--small-text-color);
+        color: var(--text-color);
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        border-radius: 20px;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .choice button:hover {
+        background-color: var(--text-color);
+        color: var(--small-text-color);
+        border: 2px solid var(--small-text-color);
+      }
+      .ques {
+        align-self: center;
+        margin-top: 40px;
+      }
     </style>
   </head>
   <body>
     <div class="fullwidth timeline">
-      <div class="card-container">
-        <div class="card-container">
+      <div class="card-container reveal">
         <div class="card">
           <p class="title muhaqu">PLACEHOLDER</p>
           <p class="date">2007</p>
@@ -94,8 +172,7 @@
           </p>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-container">
+      <div class="card-container reveal">
         <div class="card">
           <p class="title muhaqu">PLACEHOLDER</p>
           <p class="date">2007</p>
@@ -108,8 +185,7 @@
           </p>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-container">
+      <div class="card-container reveal">
         <div class="card">
           <p class="title muhaqu">PLACEHOLDER</p>
           <p class="date">2007</p>
@@ -122,8 +198,7 @@
           </p>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-container">
+      <div class="card-container reveal">
         <div class="card">
           <p class="title muhaqu">PLACEHOLDER</p>
           <p class="date">2007</p>
@@ -136,8 +211,7 @@
           </p>
         </div>
       </div>
-      <div class="card-container">
-        <div class="card-container">
+      <div class="card-container reveal">
         <div class="card">
           <p class="title muhaqu">PLACEHOLDER</p>
           <p class="date">2007</p>
@@ -154,5 +228,16 @@
     <button id="mode-switch" aria-label="Mode Switcher (dark/light)">
       <img src="assets/light.svg" id="mode-image" alt="dark or light" />
     </button>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <div id="popup" class="popup hidden">
+      <p class="ques">Scroll to Last Read?</p>
+      <div class="choice">
+        <button id="close-yes">Yes</button>
+        <button id="close-no">No</button>
+      </div>
+    </div>
+    <script src="about.js" type="module"></script>
   </body>
 </html>
