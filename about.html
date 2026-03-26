@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="mode.js"></script>
+    <style>
+      .fullwidth {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 40px;
+        margin-left: 40px;
+        padding-top: 20px;
+        border-left: 2px solid var(--text-color);
+      }
+
+      .card-container {
+        position: relative;
+        margin-bottom: 40px;
+      }
+
+      .card-container::before {
+        content: "";
+        position: absolute;
+        left: -46px;
+        top: 20px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--text-color);
+      }
+
+      .card-container::after {
+        content: "";
+        position: absolute;
+        left: -34px;
+        top: 24px;
+        width: 30px;
+        height: 2px;
+        background-color: var(--text-color);
+      }
+
+      .card {
+        border: 1px solid var(--text-color);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        margin-right: 50px;
+      }
+
+      .card .title {
+        margin: 0 0 8px;
+        font-size: 200px;
+        margin-top: 100px;
+        transform: translateY(10px);
+        color: var(--text-color);
+      }
+
+      .card .content {
+        margin: 0;
+        color: var(--small-text-color);
+        font-size: 18px;
+      }
+
+      .date {
+        color: var(--small-text-color); 
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullwidth timeline">
+      <div class="card-container">
+        <div class="card-container">
+        <div class="card">
+          <p class="title muhaqu">PLACEHOLDER</p>
+          <p class="date">2007</p>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus nunc. Quisque hendrerit sem id dolor egestas porta. Etiam
+            pharetra gravida porta. Nam gravida dui id justo pretium, eu ornare
+            quam tempor. Aenean ante nibh, consequat a tortor ut, laoreet auctor
+            magna. Duis nec magna consequat, pharetra orci nec.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-container">
+        <div class="card">
+          <p class="title muhaqu">PLACEHOLDER</p>
+          <p class="date">2007</p>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus nunc. Quisque hendrerit sem id dolor egestas porta. Etiam
+            pharetra gravida porta. Nam gravida dui id justo pretium, eu ornare
+            quam tempor. Aenean ante nibh, consequat a tortor ut, laoreet auctor
+            magna. Duis nec magna consequat, pharetra orci nec.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-container">
+        <div class="card">
+          <p class="title muhaqu">PLACEHOLDER</p>
+          <p class="date">2007</p>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus nunc. Quisque hendrerit sem id dolor egestas porta. Etiam
+            pharetra gravida porta. Nam gravida dui id justo pretium, eu ornare
+            quam tempor. Aenean ante nibh, consequat a tortor ut, laoreet auctor
+            magna. Duis nec magna consequat, pharetra orci nec.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-container">
+        <div class="card">
+          <p class="title muhaqu">PLACEHOLDER</p>
+          <p class="date">2007</p>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus nunc. Quisque hendrerit sem id dolor egestas porta. Etiam
+            pharetra gravida porta. Nam gravida dui id justo pretium, eu ornare
+            quam tempor. Aenean ante nibh, consequat a tortor ut, laoreet auctor
+            magna. Duis nec magna consequat, pharetra orci nec.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-container">
+        <div class="card">
+          <p class="title muhaqu">PLACEHOLDER</p>
+          <p class="date">2007</p>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus nunc. Quisque hendrerit sem id dolor egestas porta. Etiam
+            pharetra gravida porta. Nam gravida dui id justo pretium, eu ornare
+            quam tempor. Aenean ante nibh, consequat a tortor ut, laoreet auctor
+            magna. Duis nec magna consequat, pharetra orci nec.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button id="mode-switch" aria-label="Mode Switcher (dark/light)">
+      <img src="assets/light.svg" id="mode-image" alt="dark or light" />
+    </button>
+  </body>
+</html>

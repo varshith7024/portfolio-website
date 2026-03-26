@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="the home page of my personal website" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <script src="mode.js"></script>
+  </head>
+  <body>
+    <div class="semicircle"></div>
+    <div class="semicircle-wrapper">
+      <div class="semicircle-small"></div>
+    </div>
+    <div class="fullscreen" role="main">
+      <div class="namediv">
+        <p id="name" class="muhaqu">VARSHITH ANTHAGIRI</p>
+      </div>
+      <div class="buttons">
+        <button
+          class="main muhaqu"
+          onclick="window.location.href = 'about.html'"
+          aria-label="About"
+        >
+          ABOUT
+        </button>
+        <button
+          class="main muhaqu"
+          onclick="window.location.href = 'projects.html'"
+          aria-label="Projects"
+        >
+          PROJECTS
+        </button>
+        <button
+          class="main muhaqu"
+          onclick="window.location.href = 'contact.html'"
+          aria-label="Contact"
+        >
+          CONTACT
+        </button>
+      </div>
+    </div>
+
+    <button id="mode-switch" aria-label="Mode Switcher (dark/light)">
+      <img src="assets/dark.svg" id="mode-image" alt="dark or light" />
+    </button>
+  </body>
+</html>
