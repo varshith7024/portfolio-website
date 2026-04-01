@@ -19,11 +19,11 @@ function gotoScroll() {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       window.scrollTo({
         top: scroll,
-        behavior: "smooth",
       });
     } else {
       window.scrollTo({
         top: scroll,
+        behavior: "smooth",
       });
     }
   }

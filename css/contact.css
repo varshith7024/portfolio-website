@@ -5,8 +5,8 @@
 }
 
 .contact-me {
-  font-size: 200px;
-  transform: translateY(150px);
+  font-size: clamp(100px, 16vw, 200px);
+  transform: translateY(clamp(60px, 10vw, 150px));
   color: var(--text-color);
 }
 
@@ -19,7 +19,8 @@ input {
   margin-bottom: 50px;
   color: var(--small-text-color);
   height: 40px;
-  width: 460px;
+  width: min(460px, 80vw);
+
   padding: 20px;
   font-size: larger;
   background-color: transparent;
@@ -99,4 +100,36 @@ input.shake {
 .finished {
   background-color: #5fe75f !important;
   color: black !important;
+}
+
+@media (max-width: 600px) {
+  #name {
+    margin-top: clamp(80px, 18vw, 150px);
+  }
+
+  .contact-me {
+    font-size: clamp(80px, 24vh, 160px);
+    transform: translateY(clamp(40px, 12vw, 60px));
+  }
+
+  input {
+    margin-bottom: 30px;
+    box-shadow:
+      var(--small-text-color) -3px 3px,
+      var(--small-text-color) -6px 6px,
+      var(--small-text-color) -9px 9px;
+  }
+
+  input:focus {
+    box-shadow:
+      var(--text-color) -3px 3px,
+      var(--text-color) -6px 6px,
+      var(--text-color) -9px 9px;
+  }
+
+  #submit {
+    width: min(300px, 80vw);
+    height: 56px;
+    margin-top: 20px;
+  }
 }

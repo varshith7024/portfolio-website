@@ -24,6 +24,7 @@ D3:
 
 D4:
 
+- reading progress indicator
 - A2, B1
 
 D5:
