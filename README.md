@@ -3,8 +3,6 @@
 D1:
 
 - add actual content
-- personal statement
-- photo
 - validator.w3.org
 
 D2:
