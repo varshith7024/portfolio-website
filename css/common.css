@@ -62,3 +62,10 @@ body {
   margin: 0;
   filter: invert(var(--filter));
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

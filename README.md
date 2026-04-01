@@ -19,8 +19,7 @@ D2:
 D3:
 
 - explain animation-fill-mode: both
-- prefers-reduced-motion
-- explain non standard easing curve (typed text)
+- explain non standard easing curve (button)
 - justify all animations
 
 D5:

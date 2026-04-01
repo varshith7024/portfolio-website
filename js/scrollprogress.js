@@ -16,10 +16,16 @@ function checkForScroll() {
 function gotoScroll() {
   let scroll = sessionStorage.getItem("scrollDistance");
   if (scroll !== null) {
-    window.scrollTo({
-      top: scroll,
-      behavior: "smooth",
-    });
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.scrollTo({
+        top: scroll,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: scroll,
+      });
+    }
   }
 }
 
