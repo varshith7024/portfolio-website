@@ -22,10 +22,13 @@ D3:
 - explain non standard easing curve (button)
 - justify all animations
 
+D4:
+
+- A2, B1
+
 D5:
 
 - lighthouse screenshot
-- aria
 - comments
 
 D6:

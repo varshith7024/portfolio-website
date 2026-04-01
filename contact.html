@@ -15,7 +15,12 @@
     </button>
 
     <div class="fullscreen">
-      <div class="muhaqu contact-me typed-host" id="title"></div>
+      <div
+        class="muhaqu contact-me typed-host"
+        id="title"
+        aria-hidden="true"
+      ></div>
+      <span class="sr-only" id="title-accessible"> Contact Me </span>
       <input type="text" placeholder="Name" id="name" autofocus />
       <input type="email" placeholder="Email" id="email" />
       <input type="text" placeholder="What's up" id="content" />
