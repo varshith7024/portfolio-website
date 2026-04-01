@@ -1,0 +1,37 @@
+.typed-host {
+  display: inline;
+  transition: color 0.3s ease;
+}
+
+.tt-text {
+  display: inline;
+}
+
+@keyframes tt-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.tt-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: currentColor;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  border-radius: 1px;
+  transform: translateY(-40px);
+  animation: tt-blink 1.1s step-start infinite;
+  transition: color 0.3s ease;
+}
+
+.typed-host.typing .tt-cursor,
+.typed-host.erasing .tt-cursor {
+  animation-play-state: paused;
+  opacity: 1;
+}

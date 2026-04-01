@@ -1,27 +1,34 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/D2TIbfOf)
-
-# Introduction to Software Systems S26
-
-## Assignment 2
-
-The assignment is available [here](https://arihant25.github.io/iss-s26-a2/).
-
-[This](https://hackmd.io/tNHsqwNhRoy12Oql-5cpwQ) is where you can ask questions about it, for which you will receive answers [here](https://hackmd.io/KiR2DviZT8OyzNutMPdK9w).
-
-Good luck, have fun!
-
-https://www.figma.com/resource-library/personal-website-examples/
-
-https://www.framer.com/blog/personal-website-examples/
-
-https://www.framer.com/marketplace/templates/sharm-personal-framer-template/
-
-https://www.squarespace.com/blog/personal-website-examples
-
-https://www.wix.com/explore/websites/categories/personal
-
 # TODO
 
-1. add actual content
-2. home button
-3. /images/pfp.jpg
+D1:
+
+- add actual content
+- personal statement
+- photo
+- validator.w3.org
+- back button
+
+D2:
+
+- 5 color palette
+- type scale
+- explain fonts choice
+- contrast check
+- responsiveness
+
+D3:
+
+- explain animation-fill-mode: both
+- prefers-reduced-motion
+- explain non standard easing curve (typed text)
+- justify all animations
+
+D5:
+
+- lighthouse screenshot
+- aria
+- comments
+
+D6:
+
+- deployment

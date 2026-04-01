@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/typedtext.css" />
     <script src="js/mode.js"></script>
   </head>
   <body>
@@ -14,46 +15,13 @@
     </button>
 
     <div class="fullscreen">
-      <div class="muhaqu contact-me">CONTACT ME</div>
+      <div class="muhaqu contact-me typed-host" id="title"></div>
       <input type="text" placeholder="Name" id="name" autofocus />
       <input type="email" placeholder="Email" id="email" />
       <input type="text" placeholder="What's up" id="content" />
       <button id="submit">Submit</button>
     </div>
 
-    <script>
-      function checkIfEmpty(id) {
-        let elem = document.getElementById(id);
-        if (elem.value == "") {
-          elem.classList.add("shake");
-          elem.addEventListener(
-            "animationend",
-            () => {
-              elem.classList.remove("shake");
-            },
-            { once: true },
-          );
-          return false;
-        }
-        return true;
-      }
-
-      document.getElementById("submit").addEventListener("click", () => {
-        let name = checkIfEmpty("name");
-        let email = checkIfEmpty("email");
-        let content = checkIfEmpty("content");
-
-        if (name && email && content) {
-          let submit = document.getElementById("submit");
-          submit.classList.add("finished");
-          submit.innerText = "Submitted";
-
-          setTimeout(() => {
-            submit.classList.remove("finished");
-            submit.innerText = "Submit";
-          }, 1500);
-        }
-      });
-    </script>
+    <script src="js/contact.js" type="module"></script>
   </body>
 </html>
