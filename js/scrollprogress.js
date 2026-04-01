@@ -1,6 +1,15 @@
 function startScrollLog() {
   window.addEventListener("scroll", () => {
     const scrollDistance = window.scrollY;
+
+    const scrollable =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const percent = (scrollDistance / scrollable) * 100;
+
+    let progress = document.getElementById("scroll-progress-bar");
+    progress.style.width = `${percent}%`;
+    progress.setAttribute("aria-valuenow", percent);
+
     sessionStorage.setItem("scrollDistance", scrollDistance);
   });
 }

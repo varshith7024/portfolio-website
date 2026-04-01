@@ -9,6 +9,16 @@
     <script src="js/mode.js"></script>
   </head>
   <body>
+    <div
+      id="scroll-progress"
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+      aria-label="Page scroll progress"
+    >
+      <div id="scroll-progress-bar"></div>
+    </div>
     <div class="fullwidth timeline">
       <div class="card-container reveal">
         <div class="card">
@@ -76,6 +86,9 @@
         </div>
       </div>
     </div>
+    <button id="back" aria-label="Back to home page">
+      <img src="assets/back.svg" id="back-image" alt="dark or light" />
+    </button>
     <button id="mode-switch" aria-label="Mode Switcher (dark/light)">
       <img src="assets/light.svg" id="mode-image" alt="dark or light" />
     </button>

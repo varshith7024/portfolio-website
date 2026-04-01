@@ -6,7 +6,6 @@ D1:
 - personal statement
 - photo
 - validator.w3.org
-- back button
 
 D2:
 
@@ -24,7 +23,6 @@ D3:
 
 D4:
 
-- reading progress indicator
 - A2, B1
 
 D5:

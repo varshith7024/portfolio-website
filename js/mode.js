@@ -64,4 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
       modeImage.src = "assets/dark.svg";
     }
   });
+
+  document.getElementById("back").addEventListener("click", () => {
+    window.location.assign("index.html");
+  });
 });
