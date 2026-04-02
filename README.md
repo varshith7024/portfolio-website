@@ -22,9 +22,22 @@ D4:
 
 D5:
 
-- lighthouse screenshot
 - comments
 
 D6:
 
 - deployment
+
+## LIGHTHOUSE
+
+home page:
+![lighthouse home](./images/home.png)
+
+about:
+![lighthouse about](./images/about.png)
+
+contact:
+![lighthouse contact](./images/contact.png)
+
+project:
+![lighthouse project](./images/projects.png)
