@@ -6,13 +6,12 @@
 
 .contact-me {
   font-size: clamp(100px, 16vw, 200px);
-  transform: translateY(clamp(60px, 10vw, 150px));
   color: var(--text-color);
-  min-height: 100px;
+  padding-top: 80px;
 }
 
 #name {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 input {
@@ -105,12 +104,12 @@ input.shake {
 
 @media (max-width: 600px) {
   #name {
-    margin-top: clamp(80px, 18vw, 150px);
+    margin-top: clamp(80px, 18vw, 100px);
   }
 
   .contact-me {
     font-size: clamp(80px, 24vh, 160px);
-    transform: translateY(clamp(40px, 12vw, 60px));
+    padding-top: clamp(40px, 12vw, 60px);
   }
 
   input {

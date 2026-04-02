@@ -24,7 +24,7 @@
   min-width: 35%;
   font-size: clamp(40px, 10vw, 220px);
   margin: 0;
-  transform: translateY(35%);
+  transform: translateY(20%);
 }
 
 .description {
@@ -83,7 +83,7 @@
     min-width: unset;
     padding-left: 10px;
 
-    transform: translateY(35%);
+    transform: translateY(17.5%);
     padding-bottom: 0.5em;
   }
 
