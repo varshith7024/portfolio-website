@@ -9,7 +9,6 @@ D2:
 
 - explain fonts choice
 - contrast check
-- responsiveness - home page + typedtext on mobile gets clipped at top
 
 D3:
 
