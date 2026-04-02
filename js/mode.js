@@ -71,7 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById("back").addEventListener("click", () => {
-    window.location.assign("index.html");
-  });
+  let back = document.getElementById("back");
+
+  if (back !== null) {
+    back.addEventListener("click", () => {
+      window.location.assign("index.html");
+    });
+  }
 });
