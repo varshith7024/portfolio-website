@@ -3,12 +3,10 @@
 D1:
 
 - add actual content
-- validator.w3.org
 
 D2:
 
 - explain fonts choice
-- contrast check
 
 D3:
 
@@ -41,3 +39,40 @@ contact:
 
 project:
 ![lighthouse project](./images/projects.png)
+
+## CONTRAST
+
+### light mode
+
+light, large text:
+![light large](./images/lightlarge.png)
+
+light, small text:
+![light small](./images/lightsmall.png)
+
+### dark mode
+
+dark, large text:
+![dark large](./images/darklarge.png)
+
+dark, small text:
+![dark small](./images/darksmall.png)
+
+### success button
+
+both light and dark
+![success](./images/success.png)
+
+## validator.w3.org
+
+index.html
+![home](./images/homevalidator.png)
+
+about.html
+![about](./images/aboutvalidator.png)
+
+projects.html
+![projects](./images/projectsvalidator.png)
+
+contact.html
+![contact](./images/contactvalidator.png)

@@ -2,10 +2,12 @@ function setMode(light) {
   let colors = {
     light: {
       bgColor: "#ff3d00",
-      textColor: "#c5f0c9",
+      textColor: "#F7F3E3",
       smallTextColor: "#131112",
       circleColor: "#131112",
       successColor: "#5fe75f",
+      successTextColor: "#F7F3E3",
+      successTextColor: "#131112",
       overlayColor: "#00000080",
       filter: 1,
     },
@@ -15,6 +17,8 @@ function setMode(light) {
       smallTextColor: "#f0e7d8",
       circleColor: "#f0e7d8",
       successColor: "#5fe75f",
+      successTextColor: "#131112",
+      successTextColorAlt: "#ff3d00",
       overlayColor: "#00000080",
       filter: 0,
     },
@@ -34,6 +38,12 @@ function setMode(light) {
   root.style.setProperty("--small-text-color", current.smallTextColor);
   root.style.setProperty("--circle-color", current.circleColor);
   root.style.setProperty("--success-color", current.successColor);
+  root.style.setProperty("--success-text-color", current.successTextColor);
+  root.style.setProperty(
+    "--success-text-color-alt",
+    current.successTextColorAlt,
+  );
+
   root.style.setProperty("--overlay-color", current.overlayColor);
   root.style.setProperty("--filter", current.filter);
 }
