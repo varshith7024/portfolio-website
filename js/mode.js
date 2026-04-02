@@ -5,6 +5,8 @@ function setMode(light) {
       textColor: "#c5f0c9",
       smallTextColor: "#131112",
       circleColor: "#131112",
+      successColor: "#5fe75f",
+      overlayColor: "#00000080",
       filter: 1,
     },
     dark: {
@@ -12,6 +14,8 @@ function setMode(light) {
       textColor: "#ff3d00",
       smallTextColor: "#f0e7d8",
       circleColor: "#f0e7d8",
+      successColor: "#5fe75f",
+      overlayColor: "#00000080",
       filter: 0,
     },
   };
@@ -29,6 +33,8 @@ function setMode(light) {
   root.style.setProperty("--text-color", current.textColor);
   root.style.setProperty("--small-text-color", current.smallTextColor);
   root.style.setProperty("--circle-color", current.circleColor);
+  root.style.setProperty("--success-color", current.successColor);
+  root.style.setProperty("--overlay-color", current.overlayColor);
   root.style.setProperty("--filter", current.filter);
 }
 

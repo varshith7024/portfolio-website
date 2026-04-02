@@ -12,8 +12,24 @@
   font-style: normal;
 }
 
+.text-very-large {
+  font-size: 200px;
+}
+
+.text-very-small {
+  font-size: 15px;
+}
+
+.text-small {
+  font-size: 18px;
+}
+
+.text-medium {
+  font-size: 40px;
+}
+
 html {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease;
   background-color: var(--bg-color);
   font-family: "Inter";
 }
@@ -44,7 +60,7 @@ body {
   align-items: center;
   justify-content: center;
   transition:
-    background-color 0.3s ease,
+    background-color 0.4s ease,
     transform 0.2s ease-out;
   background-color: var(--small-text-color);
   z-index: 9999;
@@ -63,7 +79,7 @@ body {
   align-items: center;
   justify-content: center;
   transition:
-    background-color 0.3s ease,
+    background-color 0.4s ease,
     transform 0.2s ease-out;
   background-color: var(--small-text-color);
   z-index: 9999;

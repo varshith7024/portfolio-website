@@ -7,11 +7,9 @@ D1:
 
 D2:
 
-- 5 color palette
-- type scale
 - explain fonts choice
 - contrast check
-- responsiveness
+- responsiveness - home page + typedtext on mobile gets clipped at top
 
 D3:
 
@@ -21,7 +19,7 @@ D3:
 
 D4:
 
-- A2, B1
+- write about A2, B1
 
 D5:
 
