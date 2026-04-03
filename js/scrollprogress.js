@@ -24,6 +24,7 @@ function checkForScroll() {
 
 function gotoScroll() {
   let scroll = sessionStorage.getItem("scrollDistance");
+  /* Turn off smooth scroll if prefers reduced motion */
   if (scroll !== null) {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       window.scrollTo({

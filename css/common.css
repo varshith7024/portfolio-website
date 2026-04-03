@@ -114,6 +114,7 @@ body {
   filter: invert(var(--filter));
 }
 
+/* We want to turn off all animation and motion if prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;

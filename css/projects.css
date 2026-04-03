@@ -52,6 +52,7 @@
   overflow-x: hidden;
 }
 
+/* The container should only be out of the screen if it is going to be animated in , i.e. prefers reduced motion is off */
 @media (prefers-reduced-motion: no-preference) {
   .project-container {
     transform: translateX(-100%);
