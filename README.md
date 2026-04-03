@@ -2,7 +2,7 @@
 
 D1:
 
-- add actual content
+- add tab title
 
 D2:
 
