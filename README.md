@@ -1,9 +1,5 @@
 # TODO
 
-D1:
-
-- add tab title
-
 D2:
 
 - explain fonts choice
